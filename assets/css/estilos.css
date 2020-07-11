@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 2, 2020, 11:53:31 PM
+    Author     : Damian
+*/
+
+.btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+    background-color: blue;
+}
+
+
+.encabezado{
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 40px;
+    width:100px;
+    height:100px;
+}
+
+footer{
+
+    background-color: #4C4444;
+}
+
+.list-unstyled {
+    color: white;
+}
+
+.container-fluid{
+    text-align:center;
+    font-weight: lighter;
+    font-family: Poppins-Regular;
+}
+
+
+
+.redeSocial {
+
+    width:45px;
+    height:45px;
+}
+
+footer{
+
+    background-color: #4C4444;
+}
+
+
+ul{
+    list-style:none;
+}
+
+form{
+
+    background-color: red;
+   
+}
