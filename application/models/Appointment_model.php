@@ -10,9 +10,8 @@ class Appointment_model extends CI_Model {
 
     public function crear() {
         $data = array(
-            'date' => $this->input->post('date'),
-            'time' => $this->input->post('cortimereoElectronico'),
-            'estado' => $this->input->post('estado')
+            'fecha' => $this->input->post('fecha')
+            
         );
         $this->db->insert('tbl_cita', $data);
     }

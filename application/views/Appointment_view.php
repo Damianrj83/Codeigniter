@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,miximum-scale=1.0, minimum-scale=1.0">
-    <title>Principal</title>
+    <title>Reservar</title>
 
 
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -28,24 +28,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
           <div class="card-body">
-            <h5 class="card-title text-center">Contact Us</h5>
-            <form class="form-signin" method="post" action="<?=site_url('')?>">
-                 <div class="form-label-group">
-                   
-                    <label for="inputName">Full Name</label>
-                <input type="name" name="name" class="form-control" placeholder="Full name" required>
+            <h5 class="card-title text-center">Book</h5>
+            <form class="form-signin" method="post" action="<?=site_url('Appointment_controller/reservar')?>">
                
-              </div>
+
 
                <div class="form-label-group">
                  <label for="date">Fecha</label>
-                 <input type="date" name="date" class="form-control" placeholder="date" required autofocus>
-               
-              </div>
-                
-               <div class="form-label-group">
-                 <label for="date">Hora</label>
-                 <input type="time" name="time" class="form-control" placeholder="time" required autofocus>
+                 <input type="datetime-local" name="fecha" class="form-control" placeholder="fecha" required autofocus>
                
               </div>
                

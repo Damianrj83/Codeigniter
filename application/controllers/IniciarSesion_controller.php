@@ -20,7 +20,7 @@ class IniciarSesion_controller extends CI_Controller {
     }
 
     public function process() {
-        // Load the model
+        
         // Validate if the  user can login
         $this->load->model('IniciarSesion_model');
         $result = $this->IniciarSesion_model->validar();

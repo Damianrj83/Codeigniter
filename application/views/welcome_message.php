@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <section class="container"> 
 
             <a href="<?= site_url('CrearCuenta_controller') ?>"><button class="btn btn-primary">Crear Cuenta</button></a>
-            <a href="<?= site_url('CrearCitaSinRegistro_controller') ?>"><button class="btn btn-primary">Crear cita cita registro</button></a>
+            <a href="<?= site_url('Appointment_controller') ?>"><button class="btn btn-primary">Crear cita cita registro</button></a>
             <a href="<?= site_url('IniciarSesion_controller') ?>"><button class="btn btn-primary">Inciar Sesion</button></a>
             
              
