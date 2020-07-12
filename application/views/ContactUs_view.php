@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="card card-signin my-5">
           <div class="card-body">
             <h5 class="card-title text-center">Contact Us</h5>
-            <form class="form-signin" method="post" action="<?=site_url('CrearCitaSinRegistro_controller/crearCita')?>">
+            <form class="form-signin" method="post" action="<?=site_url('')?>">
                  <div class="form-label-group">
                    
                     <label for="inputName">Full Name</label>
@@ -52,10 +52,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                  <textarea  type="text" name="message" class="form-control" placeholder="Write here..." required></textarea> 
                
               </div>
+                
+               <div class="form-label-group">
+                 <label for="date">Date</label>
+                 <input type="date" name="date" class="form-control" placeholder="date" required autofocus>
                
-                <button class="btn btn-primary" type="submit">Send</button>
+              </div>
+               
+                <button onClick="alert('Message sent')" class="btn btn-primary" type="submit">Send</button>
             </form>
-             <a href="<?=site_url('')?>"><button class="btn btn-primary">Cancelar</button></a>
+             <a  href="<?=site_url('')?>"><button class="btn btn-primary" >Cancelar</button></a>
+          
           </div>
         </div>
       </div>

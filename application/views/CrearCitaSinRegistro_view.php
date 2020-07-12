@@ -57,7 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                
               </div>
                
-                <button class="btn btn-primary" type="submit">Continuar</button>
+                <button onClick="alert('Information saved')" class="btn btn-primary" type="submit">Continuar</button>
             </form>
              <a href="<?=site_url('')?>"><button class="btn btn-primary">Cancelar</button></a>
           </div>

@@ -62,7 +62,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                  <input  type="password" name="contrasena" class="form-control" placeholder="contrasena" required> 
                
               </div>
-                <button class="btn btn-primary" type="submit">Registar</button>
+                <button onClick="alert('Account created')" class="btn btn-primary" type="submit">Registar</button>
             </form>
              <a href="<?=site_url('')?>"><button class="btn btn-primary">Cancelar</button></a>
           </div>
