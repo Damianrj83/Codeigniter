@@ -76,7 +76,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                             <li>
                                 <p>
-                                    <a href="#!">Contactenos</a>
+                                    <a href="<?= site_url('ContactUs_controller') ?>">Contactenos</a>
                                 </p>
                             </li>
 

@@ -26,20 +26,20 @@ class IniciarSesion_model extends CI_Model {
             //Check if user exists
             if ($consulta->nivelAutorizacion == 1) {
                 // 1 = admin /0 = patient / 3 = data does not match
-                $autorizacion = 1;
+                $authorization = 1;
 
-                return $autorizacion;
+                return $authorization;
             } else {
 
-                $autorizacion = 0;
+                $authorization = 0;
 
-                return $autorizacion;
+                return $authorization;
             }
         } else {
             
-            $autorizacion = 3;
+            $authorization = 3;
 
-            return $autorizacion;
+            return $authorization;
         }
     }
     
