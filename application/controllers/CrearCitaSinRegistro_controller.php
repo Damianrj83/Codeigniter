@@ -14,5 +14,8 @@ class CrearCitaSinRegistro_controller extends CI_Controller {
         $this->load->view('CrearCitaSinRegistro_view');
 //       $this->load->helper('url');
     }
+    
+    
+    
    
 }

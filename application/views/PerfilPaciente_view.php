@@ -43,7 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       
        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tu cuenta <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Datos Persoles</a></li>
+          <li><a href="#">Datos Personales</a></li>
           <li><a href="#">Cambiar contrasena</a></li>
         </ul>
            
@@ -52,8 +52,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </ul>
     <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Hola<br> </a></li>g
-      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesion</a></li>
+      <li><a href="<?=site_url('')?>"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesion</a></li>
+      
     </ul>
+  
   </div>
 </nav>
   </body>

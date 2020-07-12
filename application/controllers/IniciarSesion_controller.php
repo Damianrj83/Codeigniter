@@ -28,18 +28,25 @@ class IniciarSesion_controller extends CI_Controller {
         // Now we verify the result
         switch ($result) {
             case 0:
-               redirect('PerfilPaciente_controller');
+                redirect('PerfilPaciente_controller');
                 break;
             case 1:
                 redirect('PerfilAdmin_controller');
                 break;
             case 3:
-              echo "<script>alert('Datos incorrectos, intentelo de nuevo');</script>";
+                echo "<script>alert('Datos incorrectos, intentelo de nuevo');</script>";
                 $this->index();
-               // redirect('IniciarSesion_controller');
-                
+                // redirect('IniciarSesion_controller');
+
                 break;
         }
+    }//end
+
+
+
+    public function loginStatus() {
+        $this->load->model('IniciarSesion_model');
+        $data['result'] = $this->IniciarSesion_model->getUserName();
     }
 
 }

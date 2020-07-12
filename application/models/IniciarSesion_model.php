@@ -10,7 +10,7 @@ class IniciarSesion_model extends CI_Model {
     public $autorizacion;
 
     public function validar() {
-        // grab user input
+        // Get user input
         $correoElectronico = $this->input->post('correoElectronico');
         $contrasena = $this->input->post('contrasena');
 
@@ -42,5 +42,21 @@ class IniciarSesion_model extends CI_Model {
             return $autorizacion;
         }
     }
+    
+     public function getUserName() {
+         
+          $correoElectronico = $this->input->post('correoElectronico');
+        $contrasena = $this->input->post('contrasena');
+
+        // Preparate the query
+        $this->db->where('correoElectronico', $correoElectronico);
+        $this->db->where('contrasena', $contrasena);
+
+        // Run the query
+        $query = $this->db->get('tbl_persona');
+        $consulta = $query->row();
+        //$name = $consulta->nombre;
+         return $consulta;
+     }
 
 }

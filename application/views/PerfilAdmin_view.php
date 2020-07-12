@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </ul>
     <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Administrador<br> </a></li>g
-      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesion</a></li>
+      <li><a href="<?=site_url('')?>"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesion</a></li>
     </ul>
   </div>
 </nav>
