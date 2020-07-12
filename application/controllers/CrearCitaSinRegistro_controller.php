@@ -6,7 +6,7 @@ class CrearCitaSinRegistro_controller extends CI_Controller {
 
    function __construct() {
        parent::__construct();
-       // $this->load->model('CrearCuenta_model');
+        $this->load->model('CrearCitaSinRegistro_model');
    }
 
     public function index() {
@@ -15,7 +15,10 @@ class CrearCitaSinRegistro_controller extends CI_Controller {
 //       $this->load->helper('url');
     }
     
-    
-    
+       public function crearCita() {
+        $this->CrearCitaSinRegistro_model->crear();
+//        redirect('PerfilPaciente_controller/index');
+         // redirect('');
+    }
    
 }

@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="card card-signin my-5">
           <div class="card-body">
             <h5 class="card-title text-center">Crear Cuenta</h5>
-            <form class="form-signin" method="post" action="<?=site_url('CrearCuenta_controller/crearCuenta')?>">
+            <form class="form-signin" method="post" action="<?=site_url('CrearCitaSinRegistro_controller/crearCita')?>">
                  <div class="form-label-group">
                    
                     <label for="inputName">Nombre</label>
