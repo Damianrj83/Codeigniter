@@ -17,6 +17,8 @@ class CrearCitaSinRegistro_model extends CI_Model {
             'sintomas'=> $this->input->post('sintomas')
         );
         $this->db->insert('tbl_persona', $data);
+        redirect('');
+        
     }
 
 }
